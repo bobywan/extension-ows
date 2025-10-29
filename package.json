@@ -2,7 +2,7 @@
   "name": "extension-ows",
   "description": "Extension Chrome/Firefox - Outils de développement pour les templates OWS",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.0",
   "type": "module",
   "engines": {
     "node": ">=22.0.0"
