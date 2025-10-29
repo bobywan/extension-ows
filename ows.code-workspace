@@ -1,0 +1,78 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.tabSize": 4,
+		"editor.rulers": [100],
+		"[javascript][typescript][typescriptreact][css][html][markdown][json][jsonc][php]": {
+			"editor.formatOnSave": true
+		},
+		"[markdown]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.wordWrap": "off"
+		},
+		"[php]": {
+			"editor.defaultFormatter": "mansoorkhan96.php-cs-fixer"
+		},
+		"[javascript][typescript][typescriptreact][css][json][jsonc]": {
+			"editor.codeActionsOnSave": {
+				"quickfix.biome": "explicit",
+				"source.organizeImports.biome": "explicit"
+			}
+		},
+		"files.trimTrailingWhitespace": true,
+		"javascript.format.enable": false,
+		"javascript.validate.enable": true,
+		"typescript.validate.enable": true,
+		"prettier.configPath": "./front/config/prettier.config.js",
+		"prettier.prettierPath": "./node_modules/prettier/index.cjs",
+		"search.exclude": {
+			"**/node_modules": true
+		},
+		"emmet.includeLanguages": {
+			"postcss": "css",
+			"twig": "html"
+		},
+		"emmet.syntaxProfiles": {
+			"postcss": "css"
+		},
+		"files.associations": {
+			"*.html": "twig",
+			"*.code-workspace": "jsonc",
+			"*.css": "css", // Eviter la surcharge par une extension PostCSS
+			"*.hbs": "handlebars"
+		},
+		"phpstan.binCommand": [".devbox/nix/profile/default/bin/php", "vendor/bin/phpstan"],
+		"phpstan.configFile": "phpstan.dist.neon",
+		"phpstan.memoryLimit": "-1",
+		"php-cs-fixer.config": ".php-cs-fixer.dist.php",
+		"php-cs-fixer.phpCmd": "PHP_CS_FIXER_IGNORE_ENV=1 devbox run php",
+		"php-cs-fixer.toolPath": "vendor/bin/php-cs-fixer",
+		"yaml.customTags": ["!php/const scalar"]
+	},
+	"extensions": {
+		"recommendations": [
+			"biomejs.biome",
+			"bmewburn.vscode-intelephense-client",
+			"csstools.postcss",
+			"esbenp.prettier-vscode",
+			"jetpack-io.devbox",
+			"mansoorkhan96.php-cs-fixer",
+			"SanderRonde.phpstan-vscode"
+		]
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "node",
+				"request": "attach",
+				"name": "Node: Nodemon",
+				"restart": true
+			}
+		]
+	}
+}

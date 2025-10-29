@@ -1,0 +1,163 @@
+/* Variables Globales du Projet */
+:root {
+    /* Couleurs principales */
+    --color-primary: #4285F4;
+    --color-primary-text: #FFFFFF;
+    --color-primary-light: #A8C7FA;
+    --color-primary-dark: #0D47A1;
+    --color-primary-accent: #6EACFF;
+
+    /* Couleurs secondaires */
+    --color-secondary: #4A6363;
+    --color-secondary-text: #FFFFFF;
+    --color-secondary-light: #CCE8E7;
+    --color-secondary-dark: #051F20;
+
+    /* Couleurs de surface */
+    --color-surface: #FCFDF7;
+    --color-surface-text: #1A1C19;
+    --color-surface-alt: #DEE5D9;
+    --color-surface-alt-text: #424940;
+
+    /* Couleurs d'état */
+    --color-error: #BA1A1A;
+    --color-error-text: #FFFFFF;
+    --color-error-light: #FFDAD6;
+    --color-error-dark: #410002;
+
+    --color-success: #146C2E;
+    --color-success-text: #FFFFFF;
+    --color-success-light: #C6F7D0;
+    --color-success-dark: #00390D;
+
+    --color-warning: #8D5524;
+    --color-warning-text: #FFFFFF;
+    --color-warning-light: #FFDDB3;
+    --color-warning-dark: #492A00;
+
+    --color-info: #006A6B;
+    --color-info-text: #FFFFFF;
+    --color-info-light: #97F0F0;
+    --color-info-dark: #002020;
+
+    /* Couleurs utilitaires */
+    --color-disabled: #9CA3AF;
+    --color-disabled-text: #6B7280;
+    --color-disabled-bg: #F3F4F6;
+
+    /* Couleurs d'interaction */
+    --color-hover: rgba(66, 133, 244, 0.08);
+    --color-focus: rgba(66, 133, 244, 0.12);
+    --color-active: rgba(66, 133, 244, 0.16);
+    --color-selected: rgba(66, 133, 244, 0.24);
+
+    /* Ombres */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Bordures */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-full: 9999px;
+
+    /* Espacements */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* Couleurs d'environnement */
+    --env-prod: #B8F5B3;
+    --env-prod-text: #002204;
+    --env-prod-accent: #8ED589;
+
+    --env-prod-ows: #B3E5FC;
+    --env-prod-ows-text: #01579B;
+    --env-prod-ows-accent: #81D4FA;
+
+    --env-preprod: #CCE8E7;
+    --env-preprod-text: #051F20;
+    --env-preprod-accent: #A3C0BF;
+
+    --env-recette: #FFE8D6;
+    --env-recette-text: #7C2D12;
+    --env-recette-accent: #E6D0B8;
+
+    --env-local: #FFE4E1;
+    --env-local-text: #7C2D12;
+    --env-local-accent: #E6CAC7;
+
+    /* Couleurs des sites */
+    --site-capital: #BBDEFB;
+    --site-capital-text: #0D47A1;
+    --site-capital-accent: #64B5F6;
+
+    --site-geo: #C8E6C9;
+    --site-geo-text: #1B5E20;
+    --site-geo-accent: #81C784;
+
+    --site-caminteresse: #E1BEE7;
+    --site-caminteresse-text: #4A148C;
+    --site-caminteresse-accent: #BA68C8;
+
+    --site-cuisineactuelle: #FFCCBC;
+    --site-cuisineactuelle-text: #BF360C;
+    --site-cuisineactuelle-accent: #FF8A65;
+
+    --site-hbrfrance: #C5CAE9;
+    --site-hbrfrance-text: #1A237E;
+    --site-hbrfrance-accent: #7986CB;
+
+    --site-voici: #F8BBD0;
+    --site-voici-text: #880E4F;
+    --site-voici-accent: #F06292;
+
+    --site-femmeactuelle: #F8BBD0;
+    --site-femmeactuelle-text: #880E4F;
+    --site-femmeactuelle-accent: #EC407A;
+
+    --site-harpersbazaar: #EEEEEE;
+    --site-harpersbazaar-text: #212121;
+    --site-harpersbazaar-accent: #9E9E9E;
+
+    --site-cotemaison: #B2EBF2;
+    --site-cotemaison-text: #00695C;
+    --site-cotemaison-accent: #4DD0E1;
+
+    --site-hellocoton: #aec8cb;
+    --site-hellocoton-text: #407076;
+    --site-hellocoton-accent: #4DD0E1;
+
+    --site-quoi: rgb(228, 195, 149);
+    --site-quoi-text: rgb(145, 103, 44);
+    --site-quoi-accent: rgb(186, 154, 109);
+
+    --site-selectionshopping: rgb(222, 174, 220);
+    --site-selectionshopping-text: rgb(79 8 76);
+    --site-selectionshopping-accent: rgb(172, 120, 170);
+
+    /* Variables additionnelles pour le système */
+    --color-background: var(--color-surface);
+    --color-text-primary: var(--color-surface-text);
+    --color-text-secondary: var(--color-surface-alt-text);
+    --color-text-inverse: #FFFFFF;
+    --color-border: var(--color-surface-alt);
+    --color-surface-dark: #1A1A1A;
+    --border-radius: var(--border-radius-md);
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Couleurs d'état étendues */
+    --color-danger: var(--color-error);
+    --color-danger-text: var(--color-error-text);
+    --color-danger-light: var(--color-error-light);
+    --color-danger-dark: var(--color-error-dark);
+}

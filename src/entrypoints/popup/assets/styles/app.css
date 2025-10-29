@@ -1,0 +1,65 @@
+@import '@assets/styles/vars.css';
+@import '@assets/styles/reset.css';
+@import '@assets/styles/components.css';
+@import '@assets/styles/utilities.css';
+
+/* App Styles */
+.ows-tools {
+    width: 780px;
+    height: 580px;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+.ows-tools__grid {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.ows-tools__navigation {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.ows-tools__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--color-background);
+    position: relative;
+}
+
+/* Scrollbar styling */
+.ows-tools__content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ows-tools__content::-webkit-scrollbar-track {
+    background: var(--color-surface-alt);
+}
+
+.ows-tools__content::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+}
+
+.ows-tools__content::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-secondary);
+}
+
+/* Focus management */
+.ows-tools:focus-within {
+    outline: none;
+}
+
+/* Expanded navigation state */
+.ows-tools__grid:has(.navigation--expanded) {
+    grid-template-columns: 200px 1fr;
+}

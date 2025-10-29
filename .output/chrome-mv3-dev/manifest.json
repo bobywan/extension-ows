@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "OWS Tools",
+  "description": "Extension privée Prisma Media - Visualiseur pour les templates OWS destiné aux développeurs et équipes techniques de l'entreprise",
+  "version": "1.0.4",
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "48": "favicon-32x32.png",
+    "128": "android-chrome-192x192.png",
+    "192": "android-chrome-192x192.png",
+    "512": "android-chrome-512x512.png"
+  },
+  "homepage_url": "https://gitlab.prismamedia.com/prismamediadigital/transverse/ows-tools",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/kaamelott/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "OWS Tools",
+    "default_icon": {
+      "16": "favicon-16x16.png",
+      "32": "favicon-32x32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "wxt:reload-extension": {
+      "description": "Reload the extension during development",
+      "suggested_key": {
+        "default": "Alt+R"
+      }
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' http://localhost:3000; object-src 'self';",
+    "sandbox": "script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3000; sandbox allow-scripts allow-forms allow-popups allow-modals; child-src 'self';"
+  }
+}
