@@ -265,7 +265,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ## 📄 Licence
 
-[ISC](LICENSE)
+[MIT](LICENSE)
 
 ---
 

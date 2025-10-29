@@ -26,7 +26,7 @@
     "name": "Bobywan",
     "email": "simon.banchet@gmail.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
     "copy-webpack-plugin": "^11.0.0",
